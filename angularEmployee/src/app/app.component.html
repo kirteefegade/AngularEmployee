@@ -1,0 +1,14 @@
+<h1>Employee Details</h1>
+
+  <input type="radio" name="type"  [(ngModel)]="type" value="table">show table
+  <input type="radio"name="type"  [(ngModel)]="type" value="list">show list
+  <button type="submit" name="btn" (click)="show()" >Click me</button>
+
+  <div *ngIf="flag"> 
+      <employee-table></employee-table>
+</div>
+<div *ngIf="flag1">
+
+  <emp-list></emp-list>
+
+</div>
